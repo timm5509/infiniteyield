@@ -9349,7 +9349,6 @@ addcmd('unloopnobgui',{'unloopunbgui','unloopnobillboardgui','unloopunbillboardg
 end)
 
 addcmd('spasm',{},function(args, speaker)
-	if not r15(speaker) then
 		local pchar=speaker.Character
 		local AnimationId = "33796059"
 		SpasmAnim = Instance.new("Animation")
@@ -9357,9 +9356,6 @@ addcmd('spasm',{},function(args, speaker)
 		Spasm = pchar.Humanoid:LoadAnimation(SpasmAnim)
 		Spasm:Play()
 		Spasm:AdjustSpeed(99)
-	else
-		notify('R6 Required','This command requires the r6 rig type')
-	end
 end)
 
 addcmd('unspasm',{'nospasm'},function(args, speaker)
@@ -9368,16 +9364,30 @@ addcmd('unspasm',{'nospasm'},function(args, speaker)
 end)
 
 addcmd('headthrow',{},function(args, speaker)
-	if not r15(speaker) then
 		local AnimationId = "35154961"
 		local Anim = Instance.new("Animation")
 		Anim.AnimationId = "rbxassetid://"..AnimationId
 		local k = speaker.Character.Humanoid:LoadAnimation(Anim)
 		k:Play(0)
 		k:AdjustSpeed(1)
-	else
-		notify('R6 Required','This command requires the r6 rig type')
-	end
+end)
+
+addcmd('slap',{},function(args, speaker)
+		local AnimationId = "273717479"
+		local Anim = Instance.new("Animation")
+		Anim.AnimationId = "rbxassetid://"..AnimationId
+		local k = speaker.Character.Humanoid:LoadAnimation(Anim)
+		k:Play(0)
+		k:AdjustSpeed(1)
+end)
+
+addcmd('laydown',{},function(args, speaker)
+		local AnimationId = "182749109"
+		local Anim = Instance.new("Animation")
+		Anim.AnimationId = "rbxassetid://"..AnimationId
+		local k = speaker.Character.Humanoid:LoadAnimation(Anim)
+		k:Play(0)
+		k:AdjustSpeed(1)
 end)
 
 addcmd('animation',{'anim'},function(args, speaker)
