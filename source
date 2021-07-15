@@ -9372,7 +9372,7 @@ addcmd('headthrow',{},function(args, speaker)
 		k:AdjustSpeed(1)
 end)
 
-addcmd('slap',{},function(args, speaker)
+addcmd('punch',{},function(args, speaker)
 		local AnimationId = "3031470191"
 		local Anim = Instance.new("Animation")
 		Anim.AnimationId = "rbxassetid://"..AnimationId
