@@ -9228,6 +9228,12 @@ addcmd('jump',{},function(args, speaker)
 	speaker.Character:FindFirstChildOfClass("Humanoid").Jump = true
 end)
 
+addcmd('giant',{'hheight'},function(args, speaker)
+	local height
+	height = args[1] or 2.1
+	speaker.Character:FindFirstChildOfClass("Humanoid").BodyHeightScale.Value = height
+end)
+
 addcmd('infjump',{'infinitejump'},function(args, speaker)
 	infJump = true
 end)
