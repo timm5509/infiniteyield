@@ -9373,7 +9373,7 @@ addcmd('headthrow',{},function(args, speaker)
 end)
 
 addcmd('slap',{},function(args, speaker)
-		local AnimationId = "273717479"
+		local AnimationId = "3031470191"
 		local Anim = Instance.new("Animation")
 		Anim.AnimationId = "rbxassetid://"..AnimationId
 		local k = speaker.Character.Humanoid:LoadAnimation(Anim)
